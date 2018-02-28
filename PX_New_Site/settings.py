@@ -25,7 +25,9 @@ SECRET_KEY = '4+sct0wc)n7owgb@$wbkqwjkkbmia(5e1h1uggb-r^od-kk4_='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pxnewsitedevfinal.us-east-1.elasticbeanstalk.com', 'pxnewsitedev.us-east-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['pxnewsitedevfinal.us-east-1.elasticbeanstalk.com',
+                 'pxnewsitedev.us-east-1.elasticbeanstalk.com',
+                 '127.0.0.1']
 
 
 # Application definition
@@ -55,7 +57,7 @@ ROOT_URLCONF = 'PX_New_Site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
