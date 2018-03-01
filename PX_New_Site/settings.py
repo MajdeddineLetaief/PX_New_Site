@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'PX_Site_App',
+    'django_jenkins',
 ]
 
 MIDDLEWARE = [
