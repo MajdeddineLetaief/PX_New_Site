@@ -43,6 +43,11 @@ INSTALLED_APPS = [
     'django_jenkins',
 ]
 
+JENKINS_TASKS = (
+    'django_jenkins.tasks.run_coverage',
+    'django_jenkins.tasks.run_junit',
+)
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
